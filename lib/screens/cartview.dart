@@ -1,3 +1,4 @@
+import 'package:assignmentapp/screens/homepage.dart';
 import 'package:assignmentapp/screens/loginpage.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +29,7 @@ class _CartPageState extends State<CartPage> {
         leading: IconButton(
           onPressed: () {
             Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (context) => const LoginPage()),
+              MaterialPageRoute(builder: (context) => const HomePage()),
             );
           },
           icon: const Icon(Icons.arrow_back),
@@ -72,9 +73,9 @@ class _CartPageState extends State<CartPage> {
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width,
-                height: 55,
+                height: 80,
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.orange,
